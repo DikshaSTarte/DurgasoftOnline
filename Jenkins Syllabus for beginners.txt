@@ -1,0 +1,53 @@
+Jenkins
+1. Jenkins for Beginners - Introduction to Playlist
+2. Jenkins for Beginners - What/Why Jenkins
+3. Jenkins for Beginners - Installation of Jenkins
+4. Jenkins for Beginners - Dashboard Overview
+5. Jenkins for Beginners - Create First Jenkins Job ( behind the seen )
+6. Jenkins for Beginners - Search Panel
+7. Jenkins for Beginners - Configuration Overview
+8. Jenkins for Beginners - Install First Plugin ( How to Change Jenkins Theme)
+9. Jenkins for Beginners - Create First User
+10. Jenkins for Beginners - Jenkins Role Base Access Control (RBAC)
+11. Jenkins for Beginners - Use of git plugin and clean workspace.
+12. Jenkins for Beginners - Trigger Build Remotely
+13. Jenkins for Beginners - Trigger Build Remotely-2
+14. Jenkins for Beginners - Build after other project are build (jenkins upstream and downstream)
+15. Jenkins for Beginners - Build after other project are build (unstable job jenkins)- part-2
+16. Jenkins for Beginners - Build Periodically
+17. Jenkins for Beginners - Poll SCM
+18. Jenkins for Beginners - Environment Variable
+19. Jenkins for Beginners - Global Environment Variable
+20. Jenkins for Beginners - Parameterized jobs in Jenkins
+21. Jenkins for beginners - Parameterized job - part 2
+22. Jenkins for beginners - Parameterized job - File Parameter
+23. Jenkins for beginners - Timeout
+24. Jenkins for Beginners - TimeStamp
+25. Jenkins for Beginners - Enable/Disable Job
+26. Jenkins for Beginners - Build a Job Concurrent or Parallels
+27. Jenkins for Beginners - Retry Count
+28. Jenkins for Beginners - throttle Build
+29. Jenkins for Beginners - Custom workspace
+30. Jenkins for Beginners - Change Display Name And Rename Job
+31. Jenkins for Beginners - Block Build when Upstream/Downstream job is building
+32. Jenkins for Beginners - General Discussion
+33. Jenkins for Beginners - Create first Jenkins Pipeline using Build Pipeline
+34. Jenkins for Beginners - Continuous Delivery/Deployment
+35. Jenkins for Beginners - Parallel Job in Jenkins Pipeline
+36. Jenkins for Beginners - Deploy WAR to Tomcat Server ( Manual Steps )
+37. Jenkins for Beginners - Deploy WAR to Tomcat Server From Jenkins (Automations)
+38. Jenkins for Beginners: What/Why Jenkins Slave (Jenkins Slave Installation) (Setup Jenkins Slave)
+39. Jenkins for Beginners: Assign a Job to jenkins slave
+40. Jenkins for Beginners: Create first Pipeline as code - Create first Jenkinsfile
+41. Jenkins for Beginners: Pipeline as code - Run a Command
+42. Jenkins for Beginners: Pipeline as code - Variable/Environment Variable
+43. Jenkins for Beginners: Pipeline as code - Build Parameters - Parameters
+44. Jenkins for Beginners: Pipeline as code - Input Parameters - Input From User
+45. Jenkins for Beginners: Pipeline as code - Post Actions
+46. Jenkins for Beginners: Pipeline as code - Short Trick
+47. Jenkins for Beginners - Pipeline as Code - Easiest Way To Write Jenkinsfile
+48. (Last) Jenkins for Beginners - Jenkins Maven Project Pipeline As Code - Send Slack Notification
+
+
+
+
