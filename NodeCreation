@@ -1,0 +1,411 @@
+//Create AWS EC2 instance --launch
+
+//click on connect and copy ssh client
+
+//open downloads where pem file is downloaded , open git bash here and paste ssh client url
+MFS088@DESKTOP-J5NRSS1 MINGW64 ~/Downloads
+$  ssh -i "U20.pem" ubuntu@ec2-54-164-14-241.compute-1.amazonaws.com
+The authenticity of host 'ec2-54-164-14-241.compute-1.amazonaws.com (54.164.14.241)' can't be established.
+ED25519 key fingerprint is SHA256:vMTsqZrEM6mShJmyQvhXb3KH6OP7D2fLCNOK08iQI+c.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'ec2-54-164-14-241.compute-1.amazonaws.com' (ED25519) to the list of known hosts.
+Welcome to Ubuntu 20.04.6 LTS (GNU/Linux 5.15.0-1036-aws x86_64)
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+  System information as of Mon Jun 26 12:46:56 UTC 2023
+  System load:  0.15              Processes:             102
+  Usage of /:   20.9% of 7.57GB   Users logged in:       0
+  Memory usage: 22%               IPv4 address for eth0: 172.31.84.5
+  Swap usage:   0%
+Expanded Security Maintenance for Applications is not enabled.
+0 updates can be applied immediately.
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+
+//sudo -i
+ubuntu@ip-172-31-84-5:~$ sudo -i
+
+//apt-get update
+root@ip-172-31-84-5:~# apt-get update
+Hit:1 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal InRelease
+Get:2 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
+Get:3 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-backports InRelease [108 kB]
+Get:4 http://security.ubuntu.com/ubuntu focal-security InRelease [114 kB]
+Get:5 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal/universe amd64 Packages [8628 kB]
+Get:6 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal/universe Translation-en [5124 kB]
+Get:7 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal/universe amd64 c-n-f Metadata [265 kB]
+Get:8 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal/multiverse amd64 Packages [144 kB]
+Get:9 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal/multiverse Translation-en [104 kB]
+Get:10 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal/multiverse amd64 c-n-f Metadata [9136 B]
+Get:11 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [2649 kB]
+Get:12 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-updates/main Translation-en [444 kB]
+Get:13 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 c-n-f Metadata [16.9 kB]
+Get:14 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [1994 kB]
+Get:15 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-updates/restricted Translation-en [280 kB]
+Get:16 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-updates/restricted amd64 c-n-f Metadata [636 B]
+Get:17 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [1074 kB]
+Get:18 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-updates/universe Translation-en [256 kB]
+Get:19 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-updates/universe amd64 c-n-f Metadata [25.1 kB]
+Get:20 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 Packages [25.2 kB]
+Get:21 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-updates/multiverse Translation-en [7408 B]
+Get:22 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 c-n-f Metadata [612 B]
+Get:23 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-backports/main amd64 Packages [45.7 kB]
+Get:24 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-backports/main Translation-en [16.3 kB]
+Get:25 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-backports/main amd64 c-n-f Metadata [1420 B]
+Get:26 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-backports/restricted amd64 c-n-f Metadata [116 B]
+Get:27 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-backports/universe amd64 Packages [25.0 kB]
+Get:28 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-backports/universe Translation-en [16.3 kB]
+Get:29 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-backports/universe amd64 c-n-f Metadata [880 B]
+Get:30 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-backports/multiverse amd64 c-n-f Metadata [116 B]
+Get:31 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [2267 kB]
+Get:32 http://security.ubuntu.com/ubuntu focal-security/main Translation-en [362 kB]
+Get:33 http://security.ubuntu.com/ubuntu focal-security/main amd64 c-n-f Metadata [13.0 kB]
+Get:34 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [1885 kB]
+Get:35 http://security.ubuntu.com/ubuntu focal-security/restricted Translation-en [264 kB]
+Get:36 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 c-n-f Metadata [640 B]
+Get:37 http://security.ubuntu.com/ubuntu focal-security/universe amd64 Packages [849 kB]
+Get:38 http://security.ubuntu.com/ubuntu focal-security/universe Translation-en [176 kB]
+Get:39 http://security.ubuntu.com/ubuntu focal-security/universe amd64 c-n-f Metadata [18.6 kB]
+Get:40 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 Packages [22.9 kB]
+Get:41 http://security.ubuntu.com/ubuntu focal-security/multiverse Translation-en [5488 B]
+Get:42 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 c-n-f Metadata [540 B]
+Fetched 27.4 MB in 6s (4888 kB/s)
+Reading package lists... Done
+
+
+//apt-get install apache2
+root@ip-172-31-84-5:~# apt-get install apache2
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following additional packages will be installed:
+  apache2-bin apache2-data apache2-utils libapr1 libaprutil1
+  libaprutil1-dbd-sqlite3 libaprutil1-ldap libjansson4 liblua5.2-0 ssl-cert
+Suggested packages:
+  apache2-doc apache2-suexec-pristine | apache2-suexec-custom www-browser
+  openssl-blacklist
+The following NEW packages will be installed:
+  apache2 apache2-bin apache2-data apache2-utils libapr1 libaprutil1
+  libaprutil1-dbd-sqlite3 libaprutil1-ldap libjansson4 liblua5.2-0 ssl-cert
+0 upgraded, 11 newly installed, 0 to remove and 79 not upgraded.
+Need to get 1867 kB of archives.
+After this operation, 8098 kB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+Get:1 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal/main amd64 libapr1 amd64 1.6.5-1ubuntu1 [91.4 kB]
+Get:2 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 libaprutil1 amd64 1.6.1-4ubuntu2.1 [84.9 kB]
+Get:3 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 libaprutil1-dbd-sqlite3 amd64 1.6.1-4ubuntu2.1 [10.6 kB]
+Get:4 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 libaprutil1-ldap amd64 1.6.1-4ubuntu2.1 [8756 B]
+Get:5 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal/main amd64 libjansson4 amd64 2.12-1build1 [28.9 kB]
+Get:6 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal/main amd64 liblua5.2-0 amd64 5.2.4-1.1build3 [106 kB]
+Get:7 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 apache2-bin amd64 2.4.41-4ubuntu3.14 [1182 kB]
+Get:8 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 apache2-data all 2.4.41-4ubuntu3.14 [158 kB]
+Get:9 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 apache2-utils amd64 2.4.41-4ubuntu3.14 [84.4 kB]
+Get:10 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 apache2 amd64 2.4.41-4ubuntu3.14 [95.6 kB]
+Get:11 http://us-east-1.ec2.archive.ubuntu.com/ubuntu focal/main amd64 ssl-cert all 1.0.39 [17.0 kB]
+Fetched 1867 kB in 0s (21.1 MB/s)
+Preconfiguring packages ...
+Selecting previously unselected package libapr1:amd64.
+(Reading database ... 61929 files and directories currently installed.)
+Preparing to unpack .../00-libapr1_1.6.5-1ubuntu1_amd64.deb ...
+Unpacking libapr1:amd64 (1.6.5-1ubuntu1) ...
+Selecting previously unselected package libaprutil1:amd64.
+Preparing to unpack .../01-libaprutil1_1.6.1-4ubuntu2.1_amd64.deb ...
+Unpacking libaprutil1:amd64 (1.6.1-4ubuntu2.1) ...
+Selecting previously unselected package libaprutil1-dbd-sqlite3:amd64.
+Preparing to unpack .../02-libaprutil1-dbd-sqlite3_1.6.1-4ubuntu2.1_amd64.deb ...
+Unpacking libaprutil1-dbd-sqlite3:amd64 (1.6.1-4ubuntu2.1) ...
+Selecting previously unselected package libaprutil1-ldap:amd64.
+Preparing to unpack .../03-libaprutil1-ldap_1.6.1-4ubuntu2.1_amd64.deb ...
+Unpacking libaprutil1-ldap:amd64 (1.6.1-4ubuntu2.1) ...
+Selecting previously unselected package libjansson4:amd64.
+Preparing to unpack .../04-libjansson4_2.12-1build1_amd64.deb ...
+Unpacking libjansson4:amd64 (2.12-1build1) ...
+Selecting previously unselected package liblua5.2-0:amd64.
+Preparing to unpack .../05-liblua5.2-0_5.2.4-1.1build3_amd64.deb ...
+Unpacking liblua5.2-0:amd64 (5.2.4-1.1build3) ...
+Selecting previously unselected package apache2-bin.
+Preparing to unpack .../06-apache2-bin_2.4.41-4ubuntu3.14_amd64.deb ...
+Unpacking apache2-bin (2.4.41-4ubuntu3.14) ...
+Selecting previously unselected package apache2-data.
+Preparing to unpack .../07-apache2-data_2.4.41-4ubuntu3.14_all.deb ...
+Unpacking apache2-data (2.4.41-4ubuntu3.14) ...
+Selecting previously unselected package apache2-utils.
+Preparing to unpack .../08-apache2-utils_2.4.41-4ubuntu3.14_amd64.deb ...
+Unpacking apache2-utils (2.4.41-4ubuntu3.14) ...
+Selecting previously unselected package apache2.
+Preparing to unpack .../09-apache2_2.4.41-4ubuntu3.14_amd64.deb ...
+Unpacking apache2 (2.4.41-4ubuntu3.14) ...
+Selecting previously unselected package ssl-cert.
+Preparing to unpack .../10-ssl-cert_1.0.39_all.deb ...
+Unpacking ssl-cert (1.0.39) ...
+Setting up libapr1:amd64 (1.6.5-1ubuntu1) ...
+Setting up libjansson4:amd64 (2.12-1build1) ...
+Setting up ssl-cert (1.0.39) ...
+Setting up liblua5.2-0:amd64 (5.2.4-1.1build3) ...
+Setting up apache2-data (2.4.41-4ubuntu3.14) ...
+Setting up libaprutil1:amd64 (1.6.1-4ubuntu2.1) ...
+Setting up libaprutil1-ldap:amd64 (1.6.1-4ubuntu2.1) ...
+Setting up libaprutil1-dbd-sqlite3:amd64 (1.6.1-4ubuntu2.1) ...
+Setting up apache2-utils (2.4.41-4ubuntu3.14) ...
+Setting up apache2-bin (2.4.41-4ubuntu3.14) ...
+Setting up apache2 (2.4.41-4ubuntu3.14) ...
+Enabling module mpm_event.
+Enabling module authz_core.
+Enabling module authz_host.
+Enabling module authn_core.
+Enabling module auth_basic.
+Enabling module access_compat.
+Enabling module authn_file.
+Enabling module authz_user.
+Enabling module alias.
+Enabling module dir.
+Enabling module autoindex.
+Enabling module env.
+Enabling module mime.
+Enabling module negotiation.
+Enabling module setenvif.
+Enabling module filter.
+Enabling module deflate.
+Enabling module status.
+Enabling module reqtimeout.
+Enabling conf charset.
+Enabling conf localized-error-pages.
+Enabling conf other-vhosts-access-log.
+Enabling conf security.
+Enabling conf serve-cgi-bin.
+Enabling site 000-default.
+Created symlink /etc/systemd/system/multi-user.target.wants/apache2.service → /lib/systemd/system/apache2.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/apache-htcacheclean.service → /lib/systemd/system/apache-htcacheclean.service.
+Processing triggers for ufw (0.36-6ubuntu1) ...
+Processing triggers for systemd (245.4-4ubuntu3.21) ...
+Processing triggers for man-db (2.9.1-1) ...
+Processing triggers for libc-bin (2.31-0ubuntu9.9) ...
+
+
+//chef-client
+root@ip-172-31-84-5:~# chef-client
+Starting Chef Client, version 14.15.6
+resolving cookbooks for run list: ["U20cookbook"]
+Synchronizing Cookbooks:
+  - U20cookbook (0.1.0)
+Installing Cookbook Gems:
+Compiling Cookbooks...
+Converging 2 resources
+Recipe: U20cookbook::default
+  * apt_package[apache2] action install (up to date)
+  * service[apache2] action start (up to date)
+Running handlers:
+Running handlers complete
+Chef Client finished, 0/2 resources updated in 02 seconds
+root@ip-172-31-84-5:~#
+
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+//Right click on ChefDK --> run as administrator
+PS C:\Windows\system32> 
+
+
+//copy path till chef-repo\
+PS C:\Windows\system32> cd C:\Durgasoftonline\Maha\MyChefServer\chef-starterKit\chef-repo\
+
+//go to chef-repo path and execute bootstrap command as below:
+knife bootstrap publicIPofInstance --ssh -user username --sudo --identity-file Copyyourpemfilepath -N NameofNode
+knife bootstrap 3.94.187.3 --ssh -user ubuntu --sudo --identity-file "C:\Users\MFS088\Downloads\myinstance.pem" -N A26
+
+PS C:\Durgasoftonline\Maha\MyChefServer\chef-starterKit\chef-repo> knife bootstrap 54.164.14.241 --ssh-user ubuntu --sudo --identity-file "C:\Users\MFS088\Downloads\U20.pem" -N NodeUbuntu20
+Creating new client for NodeUbuntu20
+
+Creating new node for NodeUbuntu20
+
+Connecting to 54.164.14.241
+
+54.164.14.241 -----> Installing Chef Omnibus (-v 14)
+54.164.14.241 downloading https://omnitruck.chef.io/chef/install.sh
+54.164.14.241   to file /tmp/install.sh.2815/install.sh
+54.164.14.241 trying wget...
+54.164.14.241 ubuntu 20.04 x86_64
+
+54.164.14.241 Getting information for chef stable 14 for ubuntu...
+54.164.14.241 downloading https://omnitruck.chef.io/stable/chef/metadata?v=14&p=ubuntu&pv=20.04&m=x86_64
+54.164.14.241   to file /tmp/install.sh.2819/metadata.txt
+54.164.14.241 trying wget...
+54.164.14.241 sha1      3c8a265a36c2ce7e5594ae894fafb248789464a2
+54.164.14.241 sha256    512c1eff0a4103e4a5c73b196d14393eddbf2b766a75e94ac9a9cb97d1fdd19c
+54.164.14.241 url       https://packages.chef.io/files/stable/chef/14.15.6/ubuntu/20.04/chef_14.15.6-1_amd64.deb
+54.164.14.241 version   14.15.6
+54.164.14.241 downloaded metadata file looks valid...
+54.164.14.241 downloading https://packages.chef.io/files/stable/chef/14.15.6/ubuntu/20.04/chef_14.15.6-1_amd64.deb
+54.164.14.241   to file /tmp/install.sh.2819/chef_14.15.6-1_amd64.deb
+54.164.14.241 trying wget...
+54.164.14.241 Comparing checksum with sha256sum...
+54.164.14.241 Installing chef 14
+54.164.14.241 installing with dpkg...
+54.164.14.241 Selecting previously unselected package chef.
+
+(Reading database ... 62654 files and directories currently installed.)
+
+54.164.14.241 Preparing to unpack .../chef_14.15.6-1_amd64.deb ...
+
+54.164.14.241 Unpacking chef (14.15.6-1) ...
+
+54.164.14.241 Setting up chef (14.15.6-1) ...
+
+54.164.14.241 Thank you for installing Chef Infra Client! For help getting started visit https://learn.chef.io
+54.164.14.241 Starting the first Chef Client run...
+
+54.164.14.241 Starting Chef Client, version 14.15.6
+
+54.164.14.241 resolving cookbooks for run list: []
+54.164.14.241 Synchronizing Cookbooks:
+54.164.14.241 Installing Cookbook Gems:
+54.164.14.241 Compiling Cookbooks...
+54.164.14.241 [2023-06-26T12:55:33+00:00] WARN: Node NodeUbuntu20 has an empty run list.
+
+54.164.14.241 Converging 0 resources
+54.164.14.241
+54.164.14.241 Running handlers:
+54.164.14.241 Running handlers complete
+54.164.14.241 Chef Client finished, 0/0 resources updated in 01 seconds
+
+PS C:\Durgasoftonline\Maha\MyChefServer\chef-starterKit\chef-repo> ls
+
+
+    Directory: C:\Durgasoftonline\Maha\MyChefServer\chef-starterKit\chef-repo
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        26-06-2023     16:05                .chef
+d-----        26-06-2023     17:44                cookbooks
+d-----        26-06-2023     15:14                roles
+-a----        26-06-2023     15:14            495 .gitignore
+-a----        26-06-2023     15:14           2284 README.md
+
+
+
+
+
+// change directory to cookbooks 
+PS C:\Durgasoftonline\Maha\MyChefServer\chef-starterKit\chef-repo> cd cookbooks\
+PS C:\Durgasoftonline\Maha\MyChefServer\chef-starterKit\chef-repo\cookbooks> ls
+
+
+    Directory: C:\Durgasoftonline\Maha\MyChefServer\chef-starterKit\chef-repo\cookbooks
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        26-06-2023     16:05                A1Instancecb
+d-----        26-06-2023     16:26                MadhuInstanceCB
+d-----        26-06-2023     17:52                MyInstance
+d-----        26-06-2023     15:14                starter
+-a----        26-06-2023     15:14            588 chefignore
+
+
+
+//create your cookbook folder 
+PS C:\Durgasoftonline\Maha\MyChefServer\chef-starterKit\chef-repo\cookbooks> chef generate cookbook U20cookbook
+Generating cookbook U20cookbook
+- Ensuring correct cookbook file content
+- Committing cookbook files to git
+- Ensuring delivery configuration
+- Ensuring correct delivery build cookbook content
+- Adding delivery configuration to feature branch
+- Adding build cookbook to feature branch
+- Merging delivery content feature branch to master
+Your cookbook is ready. Type `cd U20cookbook` to enter it.
+There are several commands you can run to get started locally developing and testing your cookbook.
+Type `delivery local --help` to see a full list.
+
+Why not start by writing a test? Tests for the default recipe are stored at:
+
+test/integration/default/default_test.rb
+
+If you'd prefer to dive right in, the default recipe can be found at:
+
+recipes/default.rb
+
+
+
+
+//get in to your cookbook
+PS C:\Durgasoftonline\Maha\MyChefServer\chef-starterKit\chef-repo\cookbooks> cd U20cookbook
+PS C:\Durgasoftonline\Maha\MyChefServer\chef-starterKit\chef-repo\cookbooks\U20cookbook> ls
+
+
+    Directory: C:\Durgasoftonline\Maha\MyChefServer\chef-starterKit\chef-repo\cookbooks\U20cookbook
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        26-06-2023     18:27                .delivery
+d-----        26-06-2023     18:27                recipes
+d-----        26-06-2023     18:27                spec
+d-----        26-06-2023     18:27                test
+-a----        26-06-2023     18:27            219 .gitignore
+-a----        26-06-2023     18:27            518 .kitchen.yml
+-a----        26-06-2023     18:27             81 Berksfile
+-a----        26-06-2023     18:27            171 CHANGELOG.md
+-a----        26-06-2023     18:27           1194 chefignore
+-a----        26-06-2023     18:27             73 LICENSE
+-a----        26-06-2023     18:27            767 metadata.rb
+-a----        26-06-2023     18:27             63 README.md
+
+
+
+//berks install
+PS C:\Durgasoftonline\Maha\MyChefServer\chef-starterKit\chef-repo\cookbooks\U20cookbook> berks install
+Resolving cookbook dependencies...
+Fetching 'U20cookbook' from source at .
+Fetching cookbook index from https://supermarket.chef.io...
+Using U20cookbook (0.1.0) from source at .
+
+
+//berks upload
+PS C:\Durgasoftonline\Maha\MyChefServer\chef-starterKit\chef-repo\cookbooks\U20cookbook> berks upload
+Uploaded U20cookbook (0.1.0) to: 'https://api.chef.io/organizations/magicflareorganization'
+PS C:\Durgasoftonline\Maha\MyChefServer\chef-starterKit\chef-repo\cookbooks\U20cookbook>
+
+// open chef.manage.io and select your node
+//click on edit run list
+//add your cookbook 
+//click on save run list
+
+//run chef-client command on git bash
+root@ip-172-31-84-5:~# chef-client
+Starting Chef Client, version 14.15.6
+resolving cookbooks for run list: ["U20cookbook"]
+Synchronizing Cookbooks:
+  - U20cookbook (0.1.0)
+Installing Cookbook Gems:
+Compiling Cookbooks...
+Converging 2 resources
+Recipe: U20cookbook::default
+  * apt_package[apache2] action install (up to date)
+  * service[apache2] action start (up to date)
+
+Running handlers:
+Running handlers complete
+Chef Client finished, 0/2 resources updated in 01 seconds
+root@ip-172-31-84-5:~#
+
+
+
+
+
+
+
+
