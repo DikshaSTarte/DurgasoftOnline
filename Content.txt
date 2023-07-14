@@ -1,0 +1,865 @@
+Batch Date: July 11th @8:00AM
+
+Faculty: Mr. Maha (15+ Yrs of Exp,..)
+
+Duration: 4 Months
+
+Location: Maitrivanam, Hyderabad
+
+Venue :
+DURGA SOFTWARE SOLUTIONS,
+Flat No : 202, 2nd Floor,
+HUDA Maitrivanam,
+Ameerpet, Hyderabad - 500038
+Ph.No: +91 - 9297929777, 8885252627
+
+Syllabus:
+
+DEVOPS
+
+Model 1: Continues Integration and Continues Delivery
+
+• Git
+• Jenkins
+• Maven
+• Jfrog
+• SonarQube
+
+Model 2: Configuration management
+
+• Vagrant
+• Chef
+
+Model 3: Configuration Management
+
+• Ansible
+
+Model 4: Containerization
+
+• Docker
+• Kubernetes
+
+Model 5: Infrastructure Automation
+
+• Terraform
+
+Model 6: Monitoring
+
+• Elastic search
+• Kibana
+• Log stash
+• Nagios
+
+Why DevOps:
+
+• Business Perspective
+• IT Perspective
+• Developer Perspective
+• Tester Perspective
+• Operations Perspective
+
+What is SDLC:
+
+• Phases of SDLC
+• Role of Dev in SDLC
+• Role of Ops in SDLC
+
+Introduction to DevOps Automation:
+
+• Introduction
+• Tools
+• DevOps Technology Categories
+• Collaboration
+• Planning
+• Issue Tracking
+• Configuration Management
+• Source Control
+• Dev Environments
+• Continuous Integration
+• Continuous Testing
+• Continuous Deployment
+• Monitoring
+
+Linux Essentials:
+
+• History
+• Types of OS
+• Flavours
+• OS Structure
+• File system
+• All Linux basic commands
+• File & directorys persmisions
+• User & groups administration
+• Accessing Servers with ssh
+• How multi user works in Linux
+• How make normal user as sudo user.
+
+Shell Script:
+
+• Introduction
+• Type of shells
+• Variables
+• Types of variables
+• Operators
+• Input arguments
+• String comparison
+• Athematic comparison
+• File conditions
+• If, loops, case, functions
+• Examples
+
+Virtualization:
+
+• Introduction
+• What is Virtualization
+• Server Virtualization
+• Desktop Virtualization
+• Application Virtualization
+
+Apache Webserver:
+
+• Installations
+• Configuration
+
+Tomcat Application Server:
+
+• Installation, configuration
+• Tomcat Manager
+• Application Management
+• Application Deployment
+
+DevOps Tools
+
+Model 1: Continues Integration and Continues Delivery
+
+Source Code Management:
+
+What is Version Control System?
+
+Git:
+
+• Source Code Management
+• SCM Tools
+• What is Git
+• Installation
+• Work space/ work dir/ work tree
+• Configuration
+• Commit/check-in
+• Version/version-ID/commit-ID,
+• Work space, staging area, buffer area
+• Local Repo/remote repo
+• Customer Branching
+• Release Branching
+• Merge, stash, fast-forwarding, rebase
+• Chery-pick, cat-file and hocks
+• Repositories and Tracking
+• Git Commands: add, commit, log, push, status, ignore, branch, checkout merge, confict, stash, reset, revert
+• Git GUI
+
+Automate Build Process:
+
+Maven:
+
+• Introduction, Maven Structure
+• Maven Dependenciess
+• Maven Repositories
+• Maven Plugins and goals
+• Integrated Maven Build
+• Maven project
+
+Jenkins:
+
+What is Jenkins?
+
+Installation and configuration
+
+• Prerequisitesd
+• Download and installation
+• Configuration.
+
+Managing Jenkins
+
+• Securing Jenkins, Managing Credentials, Plugin Management
+• Jenkins Backup, Create a Build Slave
+
+Creating Application Builds
+
+• Manual compilation with Maven
+• Manually Testing, Packaging and Running the App
+• Creating a Jenkins Job and configuring a Git Repo
+• Compiling in Jenkins
+• App Packaging in Jenkins
+• Archiving artifacts
+• Cleaning up Past Builds
+• Build time trend
+• The jenkins Dashboard
+• Troubleshooting build failures
+• Build linking upstream and downstream
+
+Plugins
+
+• Introduction
+• Plugin Architecture
+• Extension Points
+• Getting Plugins
+• Useful Plugins Overview
+• Build Tool Plugins
+• Installing a plugin
+• Plugin configuration
+• Security Overview
+
+Continuous Testing and Continuous Integration and Testing
+
+• Adding steps to Freestyle Project
+• Creating a Pipeline job to execute Maven
+• Archiving in a Pipeline
+• Checking out git repository in pipeline
+• The Master Agent Model
+• Allocating a node and workspace in Pipeline
+• Triggering Automated Builds
+• Configuring an Email Server
+• Notifications when a build fails
+• Executing unit tests
+
+Finding and Managing Plugins
+
+• The need for plugins
+• Integrated Code Coverage
+• Assessing a plugin
+• Testing Plugins and Plugin Types
+
+Building Continuous Delivery Pipeline
+
+• Continuous Delivery
+• Backup and Restore
+• A Second Node Allocation
+• Adding an Agent Node
+• Setup parallel integration testing in a pipeline
+• Executing and Monitoring Parallel pipelines
+• Setup Deployment to staging
+• Executing a Deployment pipeline
+• Checkin pipeline script to Git
+
+Master and Slave Configuration
+
+Integrating Jenkins with jfrog and sonarqube
+
+Model 2: Configuration / Provisioning
+
+CHEF:
+
+Introduction to Chef
+
+• What is Chef
+• Common Chef Terminology
+• Chef Serverand Workstation
+• Chef-Client
+• Server and Nodes
+• Chef Configuration Concepts
+• Run_list
+
+Setting up the Environment
+
+• Intro to ChefDK
+• Chef Workstation Setup
+
+Chef Server
+
+• Installing Chef Server
+• Chef-Repo, Setting Up the Work Station, and Bootstrapping A Node
+• Configuring Git
+• Chef Client, Nodes and Run Lists
+• Building A Quick Apache Cookbook
+• Managing Node Run_Lists
+• Chef-Client Configuration
+
+Resources
+
+• Understanding Chef and Chef Convergence
+• Common Chef Resources
+• Default Resource Actions
+• Working with not_if and only_if Guards
+
+Recipes and Cookbooks
+
+• Understanding Chef Recipes and Run Lists
+• Understanding Chef Cookbooks
+• Generating a Cookbook
+• Cookbook Pro-Tips
+
+Local Cookbook Development Basics
+
+• Test Kitchen Configuration
+• Using Test Kitchen
+• Static Code Analysis
+• Troubleshooting
+
+Building Web & application server Cookbook
+
+• Getting Setup
+• Starting the Apache Recipe
+• Adding Platform Support to the Cookbook
+• Adding Local Chef-Repo to Github
+• Install and configure Chef Reporting
+• Node Object and Search
+• What is Node Object
+• Writing cookbook & recipes for webserver
+• Writing cookbook & recipes for tomcat application server
+
+Attributes:
+
+• Node Attributes
+• Type of Attributes
+• Attributes presidency
+
+Environments
+
+• Chef Environments
+• What are Environments and why do they matter
+• Creating and Configuring Environments
+• Deploying to Different Environments
+• Viewing and Environments with Knife
+
+Roles
+
+• What are Roles
+• Creating A web server Role
+• Creating Db Server Role
+• Creating a Base Role
+
+Chef Supermarket
+
+• Chef Supermarket
+
+Vagrant:
+
+Introduction
+
+• What is Vagrant
+• Virtualization Overview
+
+Setting Up Vagrant
+
+• Virtual Box Installation
+• Vagrant Installation
+
+Using Vagrant
+
+• Vagrant Machine
+• Vagrant Files
+• Boxes
+• Running Vagrant Machines
+• SSH to Vagrant Machine
+• Synced Folders
+• Environment Management
+
+Automated Provisioning
+
+• Provisioning
+• Installing Apache /Shell Script
+• Installing Apache /Chef
+
+Networking
+
+• Private Networking
+• Public Networking
+
+Model 3: Configuration / Provisioning
+
+Ansible:
+
+Introduction
+
+• What is Ansible
+• Change Management
+• Provisioning
+• Automation
+• Orchestration
+• Why use Ansible
+• YAML
+• Built in Security
+• Extendable
+• Conclusion
+
+Architecture and Process Flow
+
+• Architecture Introduction
+• System Requirement
+• Components Overview
+• Process of Execution
+• Conclusion
+
+Setup and Configuration
+
+• Test Environment Setup
+• Download and Installation
+• Ansible Configuration File
+• The HOSTS File
+• Overriding the Default HOSTS File
+• Overriding the Default System Ansible.Cfg File
+• Overriding the Default Roles Path
+• Understanding the core components of Ansible
+• Ad-hoc commands in Ansible
+
+Ansible Inventory and Configuration
+
+• Introduction to Inventory &Configuration
+• Inventory Fundamentals
+• Scaling out with Multiple Files
+• Ansible Configuration Basics
+
+Ansible Playbooks
+
+• Ansible Command Line
+• Our First Playbook
+• Variables: Inclusion Types
+• Target Section
+• Variable Section
+• Task Section
+• Handler Section
+• Outlining Playbook
+• Create a Playbook from Outline
+• Optimizing Playbook
+• Taking Playbook for a Dry Run
+• Simple Variable Substitution
+• Loops
+• Conditionals
+• Vault
+• Basic Include Statements
+• Tags
+• Basic Error Handling
+• Includes - Breaking Your Playbook Into Discrete Plays
+• Starting At Task or Stepping Through All Tasks
+• Passing Variables Into Playbooks at the Command Line
+• Using Jinja2 Templates
+• Use a playbook to copy a program and customize it for the target host.
+• Wiring Play books for java, webservers and applications server
+
+Ansible Modules
+
+• Introduction
+• Ansible Modules Fundamentals
+• Module Docs
+• Yum Module
+• Setup Module
+• Other modules
+
+Create and use templates to create customized configuration files
+
+• Introduction
+• Templates
+
+Working with Ansible facts and variables.
+
+• Let see how we get ansible facts and how we use facts
+• Using Ansible facts
+• Using variables to gather server info
+
+Roles
+
+• Introduction to Roles
+• Role Basics
+• Creating Role
+• Ansible Galaxy
+• Roles - The Directory Structure
+• Role Based Tasks
+• Task Order - Pre and Post Tasks
+• Roles - Conditional Execution
+• Roles - Variable Substitution
+• Roles - Handlers
+• Roles - Configuring Alternate Roles Paths
+• Roles - Conditional Include Statements
+• Roles - Waiting For Events
+• Roles - Executing a Task Until
+• Roles - Using Tags
+• Roles - Breaking a Playbook Into a Role
+• Roles - Passing Variables from Command Line
+• Roles - Using Jinja2 Templates
+• Roles - LocalAction
+• Roles - Lets create a role to install apache.
+• Lets use the previous role and add a new one.
+• Lets build on the previous role
+• Create Role for installing tomcat on multiple nodes
+• Create Role for deployapplication on multiple nodes
+
+Model 4: Containerization
+
+Docker:
+
+• Introduction
+• What is Docker
+• Docker Life Cycle
+• How Docker Containers working
+
+Installing Docker
+
+• Installing Docker on Linux
+
+Working with Containers
+
+• How to create the containers
+• Docker commands
+• Theory of pulling and Running Containers
+• Working with images
+• Container Life cycle
+• Dockerfile
+• Build Docker images
+• Docker push
+• Docker compose
+• Docker volumes
+• Docker cpu
+• Docker memory
+• Docker Networking
+
+Kubernetes
+
+• What is kubernets
+• Purpose of Kubernets
+• How kubernets works
+• Master components, how works
+• Node Compenents, how works
+• How pods works
+• Installations and configuration kubernets cluster
+• Pod lifecycle
+• Work with pods
+• Work with Services
+• Work with Replica controller
+• Work with Deployment
+• How to Releases java application by using RC and Deploy
+• KOPS
+
+Model 5: Terraform
+
+Infrastructure Automation
+
+• What is Infrastructure as Code and why is it needed?
+• Declarative vs Procedural tools for Infrastructure as Code
+• Infrastructure as Code in the Cloud
+• Requirements for infrastructure provisioner
+• Deploying First Server
+• Preparing work environment
+• Terraform providers
+• Configuring AWS provider e. Creating EC2 instance with Terraform
+• Working with state
+• Handling resource updates
+
+Resource Dependencies and Modules
+
+• Creating AWS Virtual Private Cloud
+• Controlling dependencies with depends_on and ignore_changes
+• Making sense of our template
+• Removing duplication with modules
+• Configuring modules
+• Retrieving module data with outputs
+• Using root module outputs
+
+Storing and Supplying Configuration
+
+• Understanding variables
+• Configuring data sources
+• Exploring Terraform configuration resources
+• Taking a quick look at Consul
+
+Model 6: Monitoring
+
+System Monitoring: Nagios
+
+• Installation of Nagios
+• Configuring Nagios
+• Monitoring with Nagios
+
+Application Monitoring: ELK
+
+• Installation of Elasticsearch, logstash, Kiban stack
+• Configuring the ELK Stack
+• Monitoring logs with ELK
+
+Amazon Web Services
+
+Model 7: Elastic Cloud Computing (EC2)
+
+• EC2
+• EBS (Elastic Block Storage)
+• CLB (Classic Load Balancer)
+• ALB (Application Load Balancer)
+• Cloud Watch
+• SNS (Simple Notification Service)
+• Auto Scale
+• Route53
+• EFS (Elastic File Storage)
+• EC2 CLI
+• EC2 Cloud Formation
+• Price optimization
+
+Model 8: Networking (VPC)
+
+• Basic Networking
+• VPC (Virtual Private Cloud)
+• Subnet
+• Rout table
+• NAT
+• SG (Security groups)
+• NACL (Network Access Control Lists)
+• Peering connection
+• Transit Gateway
+• VPN (virtual private network)
+• Cloud Formation
+• VPC CLI
+• VPC Cloud Formation
+• Price optimization
+
+Model 9: Storage and Permissions (S3, IAM)
+
+• S3
+• Storage Classes
+• Version
+• Object Lifecycle
+• Statistic webhost
+• Glacier
+• IAM users
+• IAM groups
+• IAM roles
+• IAM Policies
+• S3 CLI
+• Price optimization
+
+Model 10: Database (RDS)
+
+• RDS (Relation Database Services)
+• Replica
+• MAZ (Multi Available Zone)
+• Private RDS
+• Dynamo DB
+• RDS CLI
+• DMS (Data Migration Services)
+• Elastic Cache
+• Price optimization
+
+AWS Introduction
+
+Model 7: Elastic Compute Cloud (EC2)
+
+EC2 Basics
+Amazon Machine Images (AMIs)
+Instance types
+Elastic Block Store (EBS)
+Security Groups
+IP Addressing
+Launching and using an EC2 instance
+EC2 Essentials
+Understanding Reserved Instances
+Selecting and Building EC2 Instances
+Working with public and private IP Addresses
+Cloud-init User data and Metadata
+Cloud Watch and EC2
+EC2 Placement Groups o Serving Traffic to Private Web Servers
+EBS (Elastic Block Storage)
+
+Hard disk Basics
+EBS Types
+EBS vs Instance Storage
+EBS Volumes And Snapshots:
+
+Working with Elastic Block Storage
+Understanding AWS Storage Types
+Increasing IOPS Performance
+Configuring Optimized Instances
+EBS Snapshots and Replication
+EBS Snapshots Characteristics
+Working with Snapshots in the AWS Management Console
+AWS Command Line Interface
+Working with EC2 using CLI
+EC2 Troubleshooting Scenarios
+Elastic File Storage
+
+Demonstrate ability to create backups for different services
+Overview of Backup Services on AWS and Services that Include Backups
+Creating and Scripting Automation for EC2 Snapshots
+Load Balancing Basics
+
+OSI Network Layer
+Load Balancing
+Classic Load Balancer
+Application Load Balancer
+Auto Scaling Groups
+Target Groups
+Health Checks
+Simple Notification Service (SNS)
+
+Introduction
+SNS Topics
+SNS Subscriptions and SNS Subscription Protocols
+SNS Push Notifications
+Cloudwatch
+
+Creating Cloud Watch Alarms for EC2 Monitoring
+Creating custom cloudwatch metrics
+Configuring Alarms
+Monitoring and Metrics
+
+Understanding AWS Instance types, Utilization and Performance
+EC2 Instance and System Status Checks
+Creating Cloud Watch Alarms
+Installing and Configuring Monitoring Scripts for EC2 Instances
+Dedicating an instance to monitoring
+Monitoring EBS for performance and availability
+CloudTrail
+
+CloudTrail Workflow
+Concepts
+CloudTrail Log Files
+Auto Scaling:
+
+Basics
+Using Auto Scaling
+Auto Scaling Troubleshooting scenarios
+Auto Scaling Features
+How Auto Scaling Works
+Configuring Auto Scaling
+Route 53:
+
+Route 53 Basics
+Using Route 53
+Route 53 and DNS Failover
+Weighted Routing Policies In Route 53
+Configuring DNS with Route 53
+Where we are in the reference architecture
+The role of DNS in a distributed cloud system
+Using Route 53 with ELB, CloudFront, S3
+Configuring Route 53
+Route 53 Best Practices
+Billing:
+
+AWS Billing and linking AWS Accounts
+AWS Billing Dimensions and metrics for Cloud Watch
+Cost Optimizing
+Using the AWS Price List API and Cost Explorer
+AWS EC2 CLI:
+
+Creation and management of EC2 resources using CLI
+Model 8: Virtual Private Cloud (VPC)
+
+AWS Global Infrastructure
+VPC Basics
+Internet Gateways (IGW)
+Route Tables (RTs)
+Network Access Control Lists (NACLs)
+Subnets o Availability Zones
+Introduction to VPC and AWS Networking o Building A VPC From Scratch
+VPC Networking
+VPC Security
+Configuring a NAT Instance
+DB Subnet Groups
+Elastic IP Addresses and Elastic Network Interfaces
+Configure a Web Application In VPC
+Extending the VPC to On-Premise Networks
+VPC Peering o Troubleshooting scenarios
+Network and Data Security o Network Monitoring with Flow Logs
+Extending On-Premise Networks with VPN:
+
+Using Directory Service to Connect Hybrid Architectures
+Security Zones
+Understanding AWS IP Subnet Reservations
+Hybrid Cloud AWS
+Overview
+AWS Hybrid Cloud Scenario
+Network Integration in to AWS VPC
+Best Practices
+AWS VPC Wizard Creation
+Creating an OpenVPN Instance for Client Connections
+Cloud Formation:
+
+Cloud Formation Essentials
+Creation and deployment of VPC Using Cloud Formation
+Billing:
+
+Cost Optimizing
+AWS VPC CLI:
+
+Creation and management of VPC resources using CLI
+Model 9: S3, IAM
+
+Simple Storage Service (S3)
+
+S3 Basics
+Buckets and objects
+Storage Classes
+Object Lifecycles
+Permissions
+Object Versioning
+S3 Essentials
+S3 Bucket/Object Versioning and Policies
+Website Hosting with S3
+AWS Command Line Interface
+Working with S3 using CLI
+Introduction To S3 Developer Requirements
+Creating a static hosting Website with S3
+S3 IAM & Bucket Policies
+Glacier:
+
+Overview
+Introduction to Glacier
+Creating a Glacier Vault
+Storing Archives in Glacier
+Understanding Glacier's Retrieval Pricing
+Restoring Archives from Glacier
+Billing:
+
+Cost Optimizing
+AWS S3 CLI:
+
+Creation and management of s3 resources using CLI
+Identity Access Management (IAM)
+
+What is IAM
+Create User
+Create Groups
+Roles
+Polices
+Custom polices
+Create/Set an IAM Policy for an IAM User
+Model 10: Relational Database Service (RDS) Dynamo DB
+
+RDS:
+
+Overview
+Essentials
+Working with RDS
+Subnet Groups
+Security Options
+RDS Security Groups and Connecting to RDS from EC2
+Monitoring RDS for performance and availability
+MySQL and Maria DB on RDS
+Replica & MAZ
+Private RDS
+Amazon Dynamo DB:
+
+Getting Started with Dynamo DB
+Local and Global Secondary Indexes
+Dynamo DB overview and Limits
+Dynamo DB Multi-Region Replication
+Database Migration Service
+
+How AWS DMS Works
+Security Setup
+Replication Instance
+Endpoints
+Tasks
+Migrating Mysql
+Migrating Microsoft SQL Server
+Elastic Cache
+
+Caching Overview
+Memcached
+Redis
+Clusters
+Backups
+Billing:
+
+AWS Billing and linking AWS Accounts
+AWS Billing Dimensions and metrics for Cloud Watch
+Cost Optimizing o Using the AWS Price List API and Cost Explorer
+AWS CLI
+
+Creation & Managing EBS & EFS using CLI
+Creation and Management of DB Services using CLI
