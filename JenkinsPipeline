@@ -1,0 +1,22 @@
+Jenkinsfile (Declarative Pipeline)
+pipeline {
+    agent any 
+    stages {
+        stage('Build') { 
+            steps {
+               sh 'maven clean package'
+            }
+        }
+        stage('Test') { 
+            steps {
+                sh 'test' 
+            }
+        }
+        stage('Deploy to Tomcat') { 
+            steps {
+              // Deploy a war file to tomcat server must mension url and path of my war file
+               sh 'Deploy To Tomcat'
+            }
+        }
+    }
+}
